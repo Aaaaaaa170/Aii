@@ -1,0 +1,52 @@
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+<div class="sidebar" id="sidebar">
+
+  <button
+    class="toggle-btn"
+    onclick="toggleSidebar()"
+  >
+    ☰
+  </button>
+
+  <button
+    class="new-chat-btn"
+    onclick="newChat()"
+  >
+    ＋ 新しいチャット
+  </button>
+
+  <button
+    class="clear-btn"
+    onclick="clearChat()"
+  >
+    🗑️ 履歴削除
+  </button>
+
+  <div id="historyList"></div>
+
+</div>
+
+<div class="main" id="main">
+
+  <div id="chat"></div>
+
+  <div class="input-area">
+
+    <input
+      id="message"
+      type="text"
+      placeholder="メッセージを送信..."
+      autocomplete="off"
+    >
+
+    <button
+      class="send-btn"
+      onclick="sendMessage()"
+    >
+      ↑
+    </button>
+
+  </div>
+
+</div>
